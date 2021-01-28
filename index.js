@@ -9,7 +9,9 @@ const renderRecipeImage = (recipe) => {
 
 const renderRecipeName = (recipe) => {
   const recipeName = document.createElement('h2')
-  recipeName.textContent = recipe.name
+  recipeName.innerHTML = `
+  <a href="showRecipe.html?id=${recipe.id}">${recipe.name}</a>
+  `
   recipeName.classList.add('recipe-name')
   return recipeName
 }
