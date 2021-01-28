@@ -10,8 +10,10 @@ fetch('http://localhost:3000/recipes')
       const mealType = document.createElement('p')
       const difficulty = document.createElement('p')
       const description = document.createElement('p')
+      const recipeImage = document.createElement('img')
       // const image = document.createElement('img')
 
+      recipeImage.src = recipe.image
       recipeCard.className = "individual-card"
       recipeName.textContent = recipe.name
       rating.textContent = `Rating: ${recipe.rating}`
@@ -21,7 +23,7 @@ fetch('http://localhost:3000/recipes')
       console.log(recipeCard)
 
       cards.appendChild(recipeCard)
-      recipeCard.append(recipeName, rating, mealType, difficulty, description)
+      recipeCard.append(recipeImage, recipeName, rating, mealType, difficulty, description)
     })
   })
 

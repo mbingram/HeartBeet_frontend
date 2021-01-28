@@ -50,6 +50,7 @@ body {
 .individual-card {
   background-color: rgba(255, 255, 255, 0.8);
   width: 300px;
+  text-align: center;
   padding: 1rem;
   margin: 1rem 3rem;
   box-shadow: 0 16px 32px 0 rgba(100, 100, 100, 0.1);
