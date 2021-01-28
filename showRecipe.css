@@ -3,6 +3,37 @@ html, body, html * {
   font-family: 'Roboto', sans-serif;
 }
 
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(185, 139, 87);
+  outline-style: double;
+  outline-color: white;
+  outline-width: 5px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.header img {
+  /* float: left;
+  width: 150px;
+  height: 190px; */
+  width: 375px;
+  height: 200px;
+  background: transparent;
+}
+
+.header p {
+  position: relative;
+  /* top: 18px;
+  left: 10px; */
+}
+
+
+
+body {
+  background-image: url("background.jpg");
+}
 
 
 .recipe-container {
@@ -11,7 +42,7 @@ html, body, html * {
   align-items: center;
   justify-content: center;
   border: 2px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .recipe-image {
