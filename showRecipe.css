@@ -5,9 +5,9 @@ html, body, html * {
 }
 
 .header {
-  padding: 30px;
+  margin: 0;
   text-align: center;
-  background: rgb(185, 139, 87);
+  background: rgb(185, 139, 87, 0.95);
   outline-style: double;
   outline-color: white;
   outline-width: 5px;
@@ -30,6 +30,11 @@ html, body, html * {
   left: 10px; */
 }
 
+.home-button {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+}
 
 body {
   background-image: url("background.jpg");
@@ -49,13 +54,17 @@ body {
   justify-content: center;
   width: 100%;
   height: 80%;
-  background-color: antiquewhite;
+  margin: 20px;
+  background-color: rgba(250, 235, 215, 0.95);
+  outline-style: double;
+  outline-color: white;
+  outline-width: 5px;
 }
 
 .recipe-image {
   width: 375px;
   padding: 5px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .recipe-description {
