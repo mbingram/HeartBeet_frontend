@@ -10,13 +10,40 @@
   </head>
   <body>
     <div class="header">
-      <!-- <img src="heartBeet.png" alt="logo"/> -->
-      <img src="heartBeet_test.png" alt="logo"/>
-        <p>Finding what to eat got you feelin' beet?</p>
+      <img src="heartBeet.png" alt="logo"/>
+      <p>Add a Recipe of Your Own:</p>
+      <form action="http://localhost:3000/recipes" method="post">
+        <label>Recipe Name:</label>
+        <input type="text" name="name"/>
+        <label>Rating:</label>
+        <select id="rating-dropdown" name="rating">
+          <option value=0>0</option>
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3</option>
+          <option value=4>4</option>
+          <option value=5>5</option>
+          <option value=6>6</option>
+          <option value=7>7</option>
+          <option value=8>8</option>
+          <option value=9>9</option>
+          <option value=10>10</option>
+        </select>
+        <label>Meal Type:</label>
+        <input type="text" name="meal_type"/>
+        <label>Difficulty:</label>
+        <input type="text" name="difficulty"/>
+        <label>Instructions:</label>
+        <input type="text" name="description"/>
+        <label>Image URL:</label>
+        <input type="text" name="image"/>
+        <input type="submit"/>
+      </form>
     </div>
+
+
+
     <section id="recipe-cards"></section>
-  </body>
-</html>
     <div class="row">
       <div class="column">
       <div class="card" id="recipe-cards">

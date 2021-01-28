@@ -7,22 +7,20 @@
   outline-color: white;
   outline-width: 5px;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 14px;
 }
 
 .header img {
   /* float: left;
   width: 150px;
   height: 190px; */
-  width: 375px;
-  height: 200px;
+  width: 25%;
+  height: 25%;
   background: transparent;
 }
 
-.header p {
+.header h3 {
   position: relative;
-  /* top: 18px;
-  left: 10px; */
 }
 
 body {

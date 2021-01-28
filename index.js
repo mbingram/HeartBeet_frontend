@@ -1,4 +1,17 @@
 const cards = document.querySelector("#recipe-cards")
+const dropDown = document.getElementById('#difficulty-dropdown')
+
+fetch("http://localhost:3000/recipes")
+  .then(response => response.json())
+  .then(recipes => {
+    recipes.forEach(recipe => {
+      const option = document.createElement('option')
+      option.textContent = recipe.difficulty
+      option.value = difficulty.id
+      dropDown.append(option)
+    })
+  })
+
 
 fetch('http://localhost:3000/recipes')
   .then(response => response.json())
