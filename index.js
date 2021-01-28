@@ -1,26 +1,29 @@
 const cards = document.querySelector("#recipe-cards")
 
 fetch('http://localhost:3000/recipes')
-.then(response => response.json())
-.then(recipes => {
+  .then(response => response.json())
+  .then(recipes => {
     recipes.forEach(recipe => {
-        // const recipeCard = document.createElement('div')
-        const recipeName = document.createElement('h1')
-        const rating = document.createElement('h2')
-        const mealType = document.createElement('p')
-        const difficulty = document.createElement('p')
-        const description = document.createElement('p')
-        // const image = document.createElement('img')
+      const recipeCard = document.createElement('div')
+      const recipeName = document.createElement('h1')
+      const rating = document.createElement('h2')
+      const mealType = document.createElement('p')
+      const difficulty = document.createElement('p')
+      const description = document.createElement('p')
+      // const image = document.createElement('img')
 
-        recipeName.textContent = recipe.name
-        rating.textContent = `Rating: ${recipe.rating}`
-        mealType.textContent = `Meal Type: ${recipe.meal_type}`
-        difficulty.textContent = `Difficulty: ${recipe.difficulty}`
-        description.innerHTML = `Learn More: <a href="showRecipe.html?id=${recipe.id}">here!</a>`
+      recipeCard.className = "individual-card"
+      recipeName.textContent = recipe.name
+      rating.textContent = `Rating: ${recipe.rating}`
+      mealType.textContent = `Meal Type: ${recipe.meal_type}`
+      difficulty.textContent = `Difficulty: ${recipe.difficulty}`
+      description.innerHTML = `Learn More: <a href="showRecipe.html?id=${recipe.id}">here!</a>`
+      console.log(recipeCard)
 
-        cards.append(recipeName, rating, mealType, difficulty, description)
+      cards.appendChild(recipeCard)
+      recipeCard.append(recipeName, rating, mealType, difficulty, description)
     })
-})
+  })
 
 
 

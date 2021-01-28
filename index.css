@@ -30,20 +30,16 @@ body {
   background-image: url("background.jpg");
 }
 
-.card {
-  /* border-style: solid;
-  border-width: medium;
-  border-color: rgb(185, 139, 87); */
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgb(185, 139, 87);
-  transition: 0.3s;
-  width: 300px;
+#recipe-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 2px 16px;
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.individual-card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Add some padding inside the card container */
@@ -51,6 +47,15 @@ body {
   padding: 2px 16px;
 }
 
+.individual-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 300px;
+  padding: 1rem;
+  margin: 1rem 3rem;
+  box-shadow: 0 16px 32px 0 rgba(100, 100, 100, 0.1);
+  transition: 0.3s;
+  text-shadow: 0 0 2px white;
+}
 
 img {
 width: 300px;
