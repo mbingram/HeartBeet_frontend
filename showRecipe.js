@@ -38,7 +38,7 @@ const renderRecipeName = (recipe) => {
 
 const renderRecipeDescription = (recipe) => {
   const recipeDescription = document.createElement('p')
-  recipeDescription.textContent = recipe.description
+  recipeDescription.textContent = "Instructions: " + recipe.description
   recipeDescription.classList.add('recipe-description')
   return recipeDescription
 }

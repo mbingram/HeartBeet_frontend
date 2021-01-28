@@ -1,3 +1,4 @@
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 html, body, html * {
   font-family: 'Roboto', sans-serif;
@@ -30,7 +31,6 @@ html, body, html * {
 }
 
 
-
 body {
   background-image: url("background.jpg");
 }
@@ -47,15 +47,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   height: 80%;
   background-color: antiquewhite;
 }
 
 .recipe-image {
   width: 375px;
+  padding: 5px;
+  margin: 10px;
 }
 
 .recipe-description {
-  width: 75%;
+  width: 370px;
 }
