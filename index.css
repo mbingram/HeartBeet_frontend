@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
-html, body, html * {
-  font-family: 'Roboto', sans-serif;
+
 .header {
   padding: 30px;
   text-align: center;
@@ -28,8 +26,35 @@ html, body, html * {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
   background-image: url("background.jpg");
+}
+
+.card {
+  /* border-style: solid;
+  border-width: medium;
+  border-color: rgb(185, 139, 87); */
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgb(185, 139, 87);
+  transition: 0.3s;
+  width: 300px;
+  padding: 2px 16px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+img {
+width: 300px;
+height: 300px;
 }
 
 .card {
